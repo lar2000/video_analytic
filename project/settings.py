@@ -40,6 +40,13 @@ INSTALLED_APPS = [
     'analyticapp'
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.MultiPartParser',
+    ]
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -81,7 +88,7 @@ DATABASES = {
         "USER": "laryang",
         "PASSWORD": "7119138",
         "HOST": "127.0.0.1",
-        "PORT": "5432", 
+        "PORT": "", 
     }
 }
 
