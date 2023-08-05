@@ -1,8 +1,8 @@
 
 from django.urls import path
-from analyticapp import views
+from analyticapp.views import cap_video
 
 urlpatterns = [
     
-    path('',views.index),   
+    path('',cap_video.index),   
 ]

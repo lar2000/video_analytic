@@ -1,7 +1,5 @@
 from django.contrib import admin
-from analyticapp.models import CCTV
-from analyticapp.models import data
+from analyticapp.models import Media
 
 # Register your models here.
-admin.site.register(CCTV)
-admin.site.register(data)
+admin.site.register(Media)
