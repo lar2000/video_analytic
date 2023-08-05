@@ -5,8 +5,7 @@ import cv2
 from django.shortcuts import render
 from analyticapp.models import Media
 
-# Create your views here.
-from django.http import HttpResponse   
+# Create your views here.  
 
 def index(request):
     all_data = Media.objects.all()
