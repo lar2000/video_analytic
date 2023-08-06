@@ -1,6 +1,7 @@
 import datetime
 import time
 import cv2
+import psycopg2
 
 from django.shortcuts import render
 from analyticapp.models import Media
@@ -45,5 +46,6 @@ while(cap.isOpened()):
 video_cap.release()
 cap.release()
 cv2.destroyAllWindows(), 
+
 
 # video 
