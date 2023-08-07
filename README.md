@@ -25,6 +25,9 @@ Unix/MacOS: source venv/bin/activate
         "HOST": "127.0.0.1",
         "PORT": "5432", 
 
+## Make migrations and Apply to database
+    python manage.py makemigrations 
+    python manage.py migrate
 ## Setup Initial User, and Admin
 
     # create first user
