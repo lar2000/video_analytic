@@ -1,6 +1,6 @@
 # Create a new database(postgresql)
 
-CREATE DATABASE 'we-db'
+CREATE DATABASE 'your_dbname'
 
 ## Basic Settings for Development
 
@@ -19,7 +19,7 @@ Unix/MacOS: source venv/bin/activate
 
 # Basic Settings(open setting.py in your project)
 "ENGINE": "django.db.backends.postgresql",
-        "NAME": "web-db",
+        "NAME": "your_dbname",
         "USER": "your_username",
         "PASSWORD": "your password",
         "HOST": "127.0.0.1",
