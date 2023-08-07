@@ -1,8 +1,15 @@
-# Create a new database(postgresql)
-
-CREATE DATABASE 'your_dbname'
+## Install:
+-git
+-Python version 3.8 
+-PostgreSQL version 15.3
+-pgAdmin
+- node v16.19.1
 
 ## Basic Settings for Development
+
+    # Create a new database(postgresql)
+
+CREATE DATABASE 'your_dbname'
 
    #Activate environment
 
