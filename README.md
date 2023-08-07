@@ -36,3 +36,6 @@ Unix/MacOS: source venv/bin/activate
 ## Run project
 
 python manage.py runserver 
+
+## Go to
+    localhost:8000/admin/
