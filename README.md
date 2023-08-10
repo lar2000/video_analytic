@@ -23,6 +23,13 @@ Unix/MacOS: source venv/bin/activate
 
 ## Basic Settings
 
+- pip3 install django
+- pip3 install django-environ
+- pip3 install psycopg2-binary
+- pip3 install opencv-python
+- pip3 install matplotlib
+
+
 You’ll have to make the following creations to your your .env file
 and Django Secret Key
 
