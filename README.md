@@ -51,7 +51,7 @@ SECRET_KEY = env("SECRET_KEY")
         "HOST": "127.0.0.1",
 
 ## Install dependencies
-    pip install -r requirements.txt
+    pip install -r requirements-v1.txt
 
 ## Make migrations and Apply to database
     python manage.py makemigrations 
