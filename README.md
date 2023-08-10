@@ -21,7 +21,7 @@ Unix/MacOS: python3 -m venv venv
 windows:    venv\Scripts\activate.bat
 Unix/MacOS: source venv/bin/activate
 
-## Basic Settings
+## Install Library
 
 - pip3 install django
 - pip3 install django-environ
