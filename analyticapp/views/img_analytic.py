@@ -23,8 +23,12 @@ while True:
        
     cv2.imshow("ROI",imgRoi)
     cv2.imshow("orginal",img)
-    if cv2.waitKey(0) & 0xFF == ord('1'):
-        cv2.imwrite("Detected_img" +str(count)+".jpg",imgRoi)
+    if cv2.waitKey(0) & 0xFF == ord('s'):
+        cv2.imwrite("Data/imgRoi" +str(count)+".jpg",imgRoi)
         cv2.putText(img,"saved", (40,40),cv2.FONT_HERSHEY_DUPLEX,2, (0,255,255),2)
+        count +=1
+        
+        cv2.imshow("saved",img)
+        cv2.waitKey(0)
 
     cv2.destroyAllWindows()
