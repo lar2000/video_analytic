@@ -14,15 +14,12 @@ CREATE DATABASE 'your_dbname'
    #Activate environment
 
 windows:    python -m venv venv
-Unix/MacOS: source venv/bin/activate 
+Unix/MacOS: python3 -m venv venv
 
    #Open environment
 
 windows:    venv\Scripts\activate.bat
 Unix/MacOS: source venv/bin/activate
-
-## Install dependencies
-    pip install -r requirements.txt
 
 ## Basic Settings
 
@@ -52,6 +49,9 @@ SECRET_KEY = env("SECRET_KEY")
         "USER": env("DB_USER"),
         "PASSWORD": env("DB_PASS"),
         "HOST": "127.0.0.1",
+
+## Install dependencies
+    pip install -r requirements.txt
 
 ## Make migrations and Apply to database
     python manage.py makemigrations 
