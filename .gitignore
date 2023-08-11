@@ -133,7 +133,7 @@ env.bak/
 venv.bak/
 
 # Virtul
-virtul/
+*.virtul
 
 
 # Spyder project settings
