@@ -35,7 +35,7 @@ and Django Secret Key
 
     DB_NAME=your_database_name
     DB_USER=your_user_name
-    DB_PWD=your_password
+    DB_PASS=your_password
 
     SECRET_KEY='your_secret_key'
 # Basic Settings(open setting.py in your project)
@@ -58,7 +58,14 @@ SECRET_KEY = env("SECRET_KEY")
         "HOST": "127.0.0.1",
 
 ## Install dependencies
-    pip install -r requirements.txt
+   windows:   pip install -r requirement-dev.txt
+   Unix/MacOS:   pip3 install -r requirement-dev.txt
+
+## Add freeze
+   
+   windows:   pip freeze > req_name.txt
+   Unix/MacOS:   pip3 freeze > req_name.txt
+
 
 ## Make migrations and Apply to database
     python manage.py makemigrations 
