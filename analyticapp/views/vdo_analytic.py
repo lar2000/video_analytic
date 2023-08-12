@@ -1,24 +1,15 @@
 import datetime
 import time
 import cv2
-import psycopg2
 
-from django.shortcuts import render
-from analyticapp.models import Media
-
-# Create your views here.  
-
-def index(request):
-    all_data = Media.objects.all()
-    return render(request, "cctv.html",{"all_data":all_data})
     
 cap = cv2.VideoCapture("assets/video/suspens.mp4")
 fourcc = cv2.VideoWriter_fourcc('H','2','6','4')
 dt = datetime.datetime.now().strftime('%H%M%S')
 video_cap = cv2.VideoWriter("assets/img/" + dt +".jpg", fourcc,20.0,(640,480))
    
-fps = 0.2
-duration = 40 # seconds
+fps = 30
+duration = 10 # seconds
 frames = int(fps * duration)
 
 start_time = time.time()

@@ -1,6 +1,6 @@
 
 from django.urls import path
-from analyticapp.views import vdo_analytic, site
+from analyticapp.views import readnumder_analy, site
 
 urlpatterns = [
     
