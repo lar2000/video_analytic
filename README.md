@@ -38,24 +38,6 @@ and Django Secret Key
     DB_PASS=your_password
 
     SECRET_KEY='your_secret_key'
-# Basic Settings(open setting.py in your project)
-
-Below your import in settings.py:
-
-import environ
-env = environ.Env()
-environ.Env.read_env()
-
-SECRET_KEY = env("SECRET_KEY")
-.
-.
-.
-
-"ENGINE": "django.db.backends.postgresql",
-        "NAME": env("DB_NAME"),
-        "USER": env("DB_USER"),
-        "PASSWORD": env("DB_PASS"),
-        "HOST": "127.0.0.1",
 
 ## Install dependencies
    windows:   pip install -r requirement-dev.txt
