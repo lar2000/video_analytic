@@ -1,9 +1,9 @@
 import datetime
 import cv2
 import time
-cap = cv2.VideoCapture('assets/video/traffic.mp4')  #Path to footage
+cap = cv2.VideoCapture('assets/video/suspens.mp4')  #Path to footage
 car_cascade = cv2.CascadeClassifier('packages/hand.xml') 
-fourcc = cv2.VideoWriter_fourcc('H','2','6','4')
+fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
 dt = datetime.datetime.now().strftime('%H%M%S')#Path to cars.xml
 
 
